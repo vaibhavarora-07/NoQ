@@ -1,0 +1,83 @@
+/* Reset default styles and set base theme */
+:root {
+  /* Colors */
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+  --text-primary: #213547;
+  --text-secondary: #888;
+  --background-light: #ffffff;
+  --background-dark: #242424;
+  --input-background: #f9f9f9;
+  --card-background: white;
+  --border-color: #ddd;
+
+  /* Typography */
+  --font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  
+  /* Border radius */
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+
+  /* Transitions */
+  --transition-speed: 0.3s;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-primary);
+  background-color: var(--background-light);
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+/* Remove the default App.css content as we'll define our own styles */
