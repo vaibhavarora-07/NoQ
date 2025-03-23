@@ -5,6 +5,8 @@ import { Retail } from './pages/Retail';
 import './index.css';
 import './styles/signin.css';
 import './styles/categories.css';
+import './styles/retail/Navbar.css';
+import './styles/retail/ShopList.css';
 
 function App() {
   return (
